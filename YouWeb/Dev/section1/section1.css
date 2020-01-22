@@ -1,0 +1,93 @@
+
+.abc{
+    border-radius: 100%;
+    width: 90px;
+}
+h1{
+    text-align: center;
+}
+.border{
+    width: 160px;
+    height: 3px;
+    background: #E3B04B;
+    margin: 20px auto;
+
+}
+
+.section1{
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 33% 34% 33%;
+    max-width: 80%;
+    margin: 5px auto ;
+    text-align: center;
+    
+    
+}
+.creation{
+   
+    grid-column-start: 1;
+    grid-row-start: 1;
+    transition: 1s;
+}
+.creation:hover{
+    box-shadow: 0px 8px 8px 0px rgb(165, 165, 165);
+    transition: 1s;
+    padding: 5px;
+}
+.logo{
+  
+    grid-column-start: 1;
+    grid-row-start: 3;
+    transition: 1s;
+}
+.logo:hover{
+    box-shadow: 0px 8px 8px 0px rgb(165, 165, 165);
+    transition: 1s;
+    padding: 5px;
+}
+.webmar{
+    
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+.webmar:hover{
+    box-shadow: 0px 8px 8px 0px rgb(165, 165, 165);
+    transition: 1s;
+    padding: 5px;
+}
+.center{
+    grid-column-start: 2;
+    grid-row-start:2;
+    margin: 15px;
+    padding: 15px;
+   
+}
+.carte{
+  
+    grid-column-start: 3;
+    grid-row-start: 3;
+    transition: 1s;
+  
+}
+.carte:hover{
+    box-shadow: 0px 8px 8px 0px rgb(165, 165, 165);
+    transition: 1s;
+    padding: 5px;
+}
+button {
+    border-radius: 20px;
+    background-color: #E3B04B;
+    border: none;
+    width: 180px;
+    height: 35px;
+    transition: 0,3s;
+}
+#but{
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+@media screen and (max-width: 780px){
+
+}
+button:hover {background-color:rgb(226, 214, 190);}
