@@ -1,0 +1,139 @@
+
+html{
+    box-sizing: border-box;
+    text-align: center;
+}
+.abc{
+    border-radius: 100%;
+    width: 90px;
+}
+
+.border{
+    width: 160px;
+    height: 3px;
+    background: #E3B04B;
+    margin: auto;
+    
+}
+
+.section1{
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 33% 34% 33%;
+    max-width: 80%;
+    margin: 5px auto ;
+    text-align: center;
+    
+    
+}
+.creation{
+   
+    grid-column-start: 1;
+    grid-row-start: 1;
+    transition: 1s;
+}
+.creation:hover{
+    box-shadow: 0px 8px 8px 0px rgb(165, 165, 165);
+    transition: 1s;
+    padding: 5px;
+}
+.logo{
+  
+    grid-column-start: 1;
+    grid-row-start: 3;
+    transition: 1s;
+}
+.logo:hover{
+    box-shadow: 0px 8px 8px 0px rgb(165, 165, 165);
+    transition: 1s;
+    padding: 5px;
+}
+.webmar{
+    
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+.webmar:hover{
+    box-shadow: 0px 8px 8px 0px rgb(165, 165, 165);
+    transition: 1s;
+    padding: 5px;
+}
+.center{
+    grid-column-start: 2;
+    grid-row-start:2;
+    margin: 15px;
+    padding: 15px;
+   
+}
+.carte{
+  
+    grid-column-start: 3;
+    grid-row-start: 3;
+    transition: 1s;
+  
+}
+.carte:hover{
+    box-shadow: 0px 8px 8px 0px rgb(165, 165, 165);
+    transition: 1s;
+    padding: 5px;
+}
+button {
+    border-radius: 20px;
+    background-color: #E3B04B;
+    border: none;
+    width: 180px;
+    height: 35px;
+    transition: 0,3s;
+}
+#but{
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+button:hover {background-color:rgb(226, 214, 190);}
+@media(max-width: 700px){
+
+    .section1{
+       
+        display: grid;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-columns: 100%;
+        justify-items: center;
+        margin: 20px auto;
+    }
+    .creation{
+        grid-area: 1/1;
+        width: 250px;
+        height: 320px;
+        margin-top: 100px;
+    }
+    .webmar{
+        grid-area: 2/1;
+        width: 250px;
+        height: 320px;
+        margin-top: 140px;
+    }
+    .logo{
+        grid-area: 3/1;
+        width: 250px;
+        height: 320px;
+        margin-top: 150px;
+    }
+    .carte{
+        grid-area: 4/1;
+        width: 250px;
+        height: 320px;
+        margin-top: 150px;
+        
+    }
+    .center{
+        display: none;
+    }
+    #but{
+        grid-area: 5/1;
+        height: 0px;
+        margin-top: 140px;
+        
+    }
+
+
+}
